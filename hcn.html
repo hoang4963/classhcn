@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let Retangle = function (dai ,rong)
+  {
+      this.dai = dai;
+      this.rong = rong ;
+      this.getdai = function ()
+      {
+          return dai;
+      }
+      this.getrong = function ()
+      {
+          return rong;
+      }
+      this.getper = function ()
+      {
+          return dai * 2 + rong *2
+      }
+      this.getarea =function ()
+      {
+          return dai*rong;
+      }
+  }
+  let hcn =  new Retangle(2,5);
+  let C = hcn.getper()
+  let S = hcn.getarea()
+  alert('Chu vi ' + C + ' dien tich ' + S)
+
+</script>
+
+</body>
+</html>
